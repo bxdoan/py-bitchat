@@ -16,8 +16,8 @@ def main():
     """Launch BitChat Terminal Python"""
     
     # Check Python version
-    if sys.version_info < (3, 8):
-        print("❌ Python 3.8 or newer required")
+    if sys.version_info < (3, 11):
+        print("❌ Python 3.11 or newer required")
         print(f"Current version: {sys.version}")
         return 1
     
