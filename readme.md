@@ -10,7 +10,7 @@
 \_______/ \__|   \____/  \_______|\___|  \__| \_______|  \____/ 
 </pre>
 
-**_bitch@ the terminal v1.0.0_**
+**_bitchat the terminal v1.0.0_**
 
 **Decentralized • Encrypted • Peer-to-Peer • Open Source | Written in Python**
 
