@@ -117,8 +117,8 @@ src/
 ## Protocol Compatibility
 
 This Python version is 100% compatible with:
-- Original Rust version
-- iOS BitChat app
+- Original Rust version by https://github.com/ShilohEye/bitchat-terminal
+- iOS BitChat app 
 - Android BitChat app
 
 All use the same:
