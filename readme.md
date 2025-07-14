@@ -205,7 +205,7 @@ python -m src.main -dd
 
 ### Setup Development Environment
 ```bash
-git clone <repository>
+git clone https://github.com/bxdoan/py-bitchat
 cd py-bitchat
 python -m venv venv
 source venv/bin/activate

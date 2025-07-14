@@ -314,7 +314,8 @@ def print_logo():
 
 \033[38;5;40m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m
 \033[37mDecentralized • Encrypted • Peer-to-Peer • Open Source\033[0m
-\033[37m                bitchat@ the terminal v1.0.0\033[0m
+\033[37m                bitchat the terminal v1.0.0\033[0m
+\033[37m                Email: bxdoan93@gmail.com\033[0m
 \033[38;5;40m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m
 """
     print(logo)
