@@ -116,10 +116,10 @@ src/
 
 ## Protocol Compatibility
 
-This Python version is 100% compatible with:
-- Original Rust version by https://github.com/ShilohEye/bitchat-terminal
-- iOS BitChat app 
-- Android BitChat app
+The Python Terminal implementation is based on the original Bitchat projects:
+- Original Rust version by [ShilohEye](https://github.com/ShilohEye/bitchat-terminal)
+- iOS BitChat app by [Jack](https://github.com/permissionlesstech/bitchat)
+- Android BitChat app [Jack](https://github.com/permissionlesstech/bitchat-android)
 
 All use the same:
 - Bluetooth LE service UUID: `F47B5E2D-4A9E-4C5A-9B3F-8E1D2C3A4B5C`
@@ -249,6 +249,6 @@ All contributions are welcome! Please:
 
 ## Support
 
-- GitHub Issues: [Link to issues]
-- Documentation: [Link to docs]
-- Community: [Link to community] 
+bitchat by [@jackjackbits] (https://github.com/jackjackbits)
+bitchat-android by [@callebtc] (https://github.com/callebtc)
+Part of the BitChat ecosystem
