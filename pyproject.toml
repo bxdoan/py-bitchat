@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-bitchat"
+version = "1.0.0"
+description = "Decentralized encrypted peer-to-peer chat over Bluetooth LE (Python implementation)"
+authors = [
+    { name = "BitChat Team", email = "bxdoan93@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+keywords = ["bluetooth", "chat", "p2p", "encryption", "terminal"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Chat",
+    "Topic :: System :: Networking",
+]
+
+dependencies = [
+    "bleak>=1.0.1",           # Bluetooth LE library
+    "cryptography>=45.0.1",    # Encryption and cryptographic operations
+    "pynacl>=1.5.0",          # NaCl cryptography (Ed25519, X25519)
+    "asyncio-mqtt>=0.16.1",   # For async operations
+    "colorama>=0.4.6",        # Terminal colors (cross-platform)
+    "click>=8.2.0",           # Command line interface
+    "aiofiles>=24.0.0",       # Async file operations
+    "pybloom-live>=4.0.0",    # Bloom filter implementation
+    "zstandard>=0.23.0",      # Fast compression
+    "uuid>=1.30",             # UUID generation
+    "python-dateutil>=2.8.0", # Date utilities
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+    "coverage>=7.0.0",
+]
+
+[project.scripts]
+bitchat-py = "src.main:main"
+
+[project.urls]
+Homepage = "https://github.com/bxdoan/py-bitchat"
+Repository = "https://github.com/bxdoan/py-bitchat"
+Issues = "https://github.com/bxdoan/py-bitchat/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers"
+testpaths = [
+    "tests",
+]
+asyncio_mode = "auto" 
