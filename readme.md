@@ -246,9 +246,3 @@ All contributions are welcome! Please:
 3. Commit changes
 4. Push to branch
 5. Create Pull Request
-
-## Support
-
-bitchat by [@jackjackbits] (https://github.com/jackjackbits)
-bitchat-android by [@callebtc] (https://github.com/callebtc)
-Part of the BitChat ecosystem
